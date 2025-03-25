@@ -106,13 +106,12 @@ const Navbar = () => {
           {/* Locations Dropdown */}
           <div className="relative group">
             <div className="flex items-center cursor-pointer">
-              <Link
-                to="/locations"
+              <div
                 className={`${isScrolled ? "text-gray-800" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out font-medium flex items-center`}
               >
                 Locations
                 <ChevronDown size={16} className="ml-1" />
-              </Link>
+              </div>
             </div>
             <div className="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg overflow-hidden z-20 transform scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 transition-all duration-300 origin-top">
               <div className="py-2">
@@ -214,13 +213,9 @@ const Navbar = () => {
 
             {/* Mobile Locations */}
             <div className="space-y-2">
-              <Link
-                to="/locations"
-                className="text-gray-800 hover:text-yellow-400 transition-colors duration-300 ease-out font-medium"
-                onClick={() => setIsOpen(false)}
-              >
+              <div className="text-gray-800 hover:text-yellow-400 transition-colors duration-300 ease-out font-medium cursor-pointer">
                 Locations
-              </Link>
+              </div>
               <div className="pl-4 space-y-2 border-l-2 border-gray-200">
                 {locations.map((location) => (
                   <Link

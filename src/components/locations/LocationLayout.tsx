@@ -62,34 +62,56 @@ const LocationLayout: React.FC<LocationLayoutProps> = ({
                   title: "Standard Cleaning",
                   description:
                     "Regular maintenance cleaning to keep your home fresh and tidy.",
+                  image:
+                    "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80",
                 },
                 {
                   title: "Deep Cleaning",
                   description:
                     "Thorough cleaning that reaches every corner and surface of your home.",
+                  image:
+                    "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80",
                 },
                 {
                   title: "Move In/Out Cleaning",
                   description:
                     "Prepare your home for new occupants or ensure you get your deposit back.",
+                  image:
+                    "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=600&q=80",
                 },
                 {
                   title: "Recurring Cleaning",
                   description:
                     "Scheduled cleaning services on a weekly, bi-weekly, or monthly basis.",
+                  image:
+                    "https://images.unsplash.com/photo-1563453392212-326f5e854473?w=600&q=80",
                 },
                 {
                   title: "Airbnb Cleaning",
                   description:
                     "Quick turnaround cleaning for vacation rentals and Airbnb properties.",
+                  image:
+                    "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&q=80",
                 },
                 {
                   title: "Post-Construction Cleaning",
                   description:
                     "Remove dust, debris, and construction residue after renovations.",
+                  image:
+                    "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80",
                 },
               ].map((service, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+                <div
+                  key={index}
+                  className="bg-white p-6 rounded-lg shadow-md overflow-hidden"
+                >
+                  <div className="mb-4 h-40 overflow-hidden rounded-md">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    />
+                  </div>
                   <h3 className="text-xl font-semibold mb-3">
                     {service.title}
                   </h3>

@@ -240,10 +240,10 @@ const Footer = () => {
                 Terms of Service
               </Link>
               <Link
-                to="/sitemap"
+                to="/faq"
                 className="text-gray-400 text-sm hover:text-white transition-colors duration-300 ease-out"
               >
-                Sitemap
+                FAQ
               </Link>
             </div>
           </div>

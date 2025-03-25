@@ -19,6 +19,9 @@ export default defineConfig({
   optimizeDeps: {
     entries: ["src/main.tsx", "src/tempobook/**/*"],
   },
+  define: {
+    __WS_TOKEN__: JSON.stringify(process.env.WS_TOKEN || ""),
+  },
   plugins: [
     react({
       plugins: conditionalPlugins,
