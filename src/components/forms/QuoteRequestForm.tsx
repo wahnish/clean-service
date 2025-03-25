@@ -93,7 +93,7 @@ const QuoteRequestForm = () => {
                   <FormControl>
                     <Input placeholder="John Doe" {...field} />
                   </FormControl>
-                  <FormMessage className="flex" />
+                  <FormMessage className="flex text-lg" />
                 </FormItem>
               )}
             />
@@ -146,9 +146,15 @@ const QuoteRequestForm = () => {
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="regular">Regular Cleaning</SelectItem>
+                      <SelectItem value="standard">
+                        Standard Cleaning
+                      </SelectItem>
                       <SelectItem value="deep">Deep Cleaning</SelectItem>
                       <SelectItem value="move">Move In/Out Cleaning</SelectItem>
+                      <SelectItem value="recurring">
+                        Recurring Cleaning
+                      </SelectItem>
+                      <SelectItem value="airbnb">Airbnb Cleaning</SelectItem>
                       <SelectItem value="onetime">One-Time Cleaning</SelectItem>
                       <SelectItem value="vacation">
                         Vacation Rental Cleaning

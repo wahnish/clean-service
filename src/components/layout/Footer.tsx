@@ -31,19 +31,19 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a
                 href="https://facebook.com"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
               >
                 <Facebook size={20} />
               </a>
               <a
                 href="https://instagram.com"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
               >
                 <Instagram size={20} />
               </a>
               <a
                 href="https://twitter.com"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
               >
                 <Twitter size={20} />
               </a>
@@ -57,7 +57,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
                   Home
                 </Link>
@@ -65,7 +65,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
                   Services
                 </Link>
@@ -73,7 +73,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/about"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
                   About Us
                 </Link>
@@ -81,7 +81,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/locations"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
                   Service Areas
                 </Link>
@@ -89,7 +89,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/faq"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
                   FAQ
                 </Link>
@@ -97,7 +97,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
                   Contact
                 </Link>
@@ -111,16 +111,16 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="/services/regular"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  to="/services/standard"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
-                  Regular Cleaning
+                  Standard Cleaning
                 </Link>
               </li>
               <li>
                 <Link
                   to="/services/deep"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
                   Deep Cleaning
                 </Link>
@@ -128,15 +128,55 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services/move"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
                   Move In/Out Cleaning
                 </Link>
               </li>
               <li>
                 <Link
+                  to="/services/recurring"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
+                >
+                  Recurring Cleaning
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/airbnb"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
+                >
+                  Airbnb Cleaning
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/onetime"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
+                >
+                  One-Time Cleaning
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/vacation"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
+                >
+                  Vacation Rental Cleaning
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/construction"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
+                >
+                  Post-Construction Cleaning
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/services/office"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
                   Office Cleaning
                 </Link>
@@ -144,7 +184,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services/special"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
                   Special Occasions
                 </Link>
@@ -172,7 +212,7 @@ const Footer = () => {
                 <Mail size={18} className="mr-2 text-primary" />
                 <a
                   href="mailto:info@healthycleanhomes.com"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
                   info@healthycleanhomes.com
                 </a>
@@ -189,19 +229,19 @@ const Footer = () => {
             <div className="flex space-x-4 mt-4 md:mt-0">
               <Link
                 to="/privacy"
-                className="text-gray-400 text-sm hover:text-white transition-colors"
+                className="text-gray-400 text-sm hover:text-white transition-colors duration-300 ease-out"
               >
                 Privacy Policy
               </Link>
               <Link
                 to="/terms"
-                className="text-gray-400 text-sm hover:text-white transition-colors"
+                className="text-gray-400 text-sm hover:text-white transition-colors duration-300 ease-out"
               >
                 Terms of Service
               </Link>
               <Link
                 to="/sitemap"
-                className="text-gray-400 text-sm hover:text-white transition-colors"
+                className="text-gray-400 text-sm hover:text-white transition-colors duration-300 ease-out"
               >
                 Sitemap
               </Link>

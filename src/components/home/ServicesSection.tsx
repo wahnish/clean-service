@@ -12,10 +12,10 @@ import {
 
 const services = [
   {
-    id: "regular",
-    title: "Regular Cleaning",
+    id: "standard",
+    title: "Standard Cleaning",
     description:
-      "Maintain a consistently clean home with our thorough regular cleaning service. Perfect for busy households that need weekly or bi-weekly maintenance.",
+      "Maintain a consistently clean home with our thorough standard cleaning service. Perfect for busy households that need weekly or bi-weekly maintenance.",
     image:
       "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80",
     features: [
@@ -33,7 +33,7 @@ const services = [
     image:
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80",
     features: [
-      "Everything in regular cleaning",
+      "Everything in standard cleaning",
       "Inside appliance cleaning",
       "Baseboards and door frames",
       "Window sills and tracks",
@@ -51,6 +51,48 @@ const services = [
       "Inside cabinets and drawers",
       "Refrigerator and oven cleaning",
       "Window cleaning",
+    ],
+  },
+  {
+    id: "airbnb",
+    title: "Airbnb Cleaning",
+    description:
+      "Keep your rental property spotless and guest-ready with our specialized Airbnb cleaning service. Perfect for hosts looking to maintain 5-star cleanliness ratings.",
+    image:
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&q=80",
+    features: [
+      "Quick turnaround between guests",
+      "Linen changing and laundry",
+      "Restocking essentials",
+      "Special attention to guest areas",
+    ],
+  },
+  {
+    id: "vacation",
+    title: "Vacation Rental Cleaning",
+    description:
+      "Comprehensive cleaning services for vacation properties ensuring your rental is always ready to impress new guests and maintain excellent reviews.",
+    image:
+      "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600&q=80",
+    features: [
+      "Deep cleaning between guests",
+      "Outdoor area maintenance",
+      "Inventory management",
+      "Damage reporting",
+    ],
+  },
+  {
+    id: "construction",
+    title: "Post-Construction Cleaning",
+    description:
+      "Transform your newly built or renovated space from a construction site to a clean, livable environment with our specialized post-construction cleaning.",
+    image:
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80",
+    features: [
+      "Removal of construction debris",
+      "Dust removal from all surfaces",
+      "Window and glass cleaning",
+      "Floor scrubbing and polishing",
     ],
   },
 ];
@@ -126,7 +168,7 @@ const ServicesSection = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <Button size="lg" asChild>
+          <Button size="lg" asChild className="px-10 py-6">
             <Link to="/services">View All Services</Link>
           </Button>
         </div>
