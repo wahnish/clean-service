@@ -19,9 +19,11 @@ export default defineConfig({
   optimizeDeps: {
     entries: ["src/main.tsx", "src/tempobook/**/*"],
   },
-  define: {
-    __WS_TOKEN__: JSON.stringify(process.env.WS_TOKEN || ""),
-  },
+  // NOTE: This broke the dev server when __WS_TOKEN__ was not stringified correctly.
+  // Leaving it here for reference — unsure if it's still needed for WebSocket/Tempo.
+  //define: {
+  // __WS_TOKEN__: JSON.stringify(process.env.WS_TOKEN || ""),
+  //},
   plugins: [
     react({
       plugins: conditionalPlugins,
