@@ -28,8 +28,12 @@ const HeroSection = () => {
               without lifting a finger.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" asChild>
-                <Link to="/quote">Get a Free Quote</Link>
+              <Button
+                size="lg"
+                className="bg-yellow-400 text-black hover:bg-yellow-500 hover:text-black"
+                asChild
+              >
+                <Link to="/contact">Get Your Free Estimate</Link>
               </Button>
               <Button
                 size="lg"
@@ -37,7 +41,7 @@ const HeroSection = () => {
                 className="bg-white/10 text-white border-white/30 hover:bg-white/20"
                 asChild
               >
-                <Link to="/services">Explore Our Services</Link>
+                <a href="tel:5551234567">Call Us Now</a>
               </Button>
             </div>
 

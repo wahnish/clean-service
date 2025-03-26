@@ -9,22 +9,49 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
+import { Button } from "./ui/button";
 
 const FAQ = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Navbar />
-      <div className="pt-24 flex-grow">
-        <div className="container mx-auto px-4 py-12">
-          <div className="max-w-4xl mx-auto mb-12">
-            <h1 className="text-4xl font-bold text-center mb-4">
+      <main>
+        {/* Hero Section */}
+        <section className="py-24 md:py-32 relative text-white">
+          {/* Background Image with Overlay */}
+          <div className="absolute inset-0 z-0 overflow-hidden">
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{
+                backgroundImage:
+                  "url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80')",
+                filter: "brightness(0.85)",
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40" />
+          </div>
+          <div className="container mx-auto px-4 text-center relative z-10">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Got Questions? We've Got Answers.
             </h1>
-            <p className="text-lg text-center text-gray-600">
+            <p className="text-xl max-w-3xl mx-auto mb-8">
               We know that inviting someone into your home requires trust.
               That's why we want to make sure you feel confident and comfortable
-              before booking a cleaning service. Here are answers to some of the
-              most common questions we receive:
+              before booking a cleaning service.
+            </p>
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-yellow-400 text-black hover:bg-yellow-500 h-10 px-6 py-2"
+            >
+              Get Your Free Estimate Now
+            </a>
+          </div>
+        </section>
+
+        <div className="container mx-auto px-4 py-12">
+          <div className="max-w-4xl mx-auto mb-12">
+            <p className="text-lg text-center text-gray-600">
+              Here are answers to some of the most common questions we receive:
             </p>
           </div>
 
@@ -37,7 +64,7 @@ const FAQ = () => {
               </h2>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     How soon can I schedule a cleaning?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -49,7 +76,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-2">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     Do I need to be home during the cleaning?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -61,24 +88,21 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-3">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     How do I book a cleaning?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
                     <p>Booking is easy! You can schedule a cleaning by:</p>
-                    <ul className="list-none mt-2">
-                      <li className="flex items-center mb-1">
-                        <span className="text-green-500 mr-2">✅</span> Calling
-                        us directly at <strong>555-123-4567</strong>
+                    <ul className="list-disc pl-5 mt-2 space-y-1">
+                      <li>
+                        Calling us directly at <strong>555-123-4567</strong>
                       </li>
-                      <li className="flex items-center mb-1">
-                        <span className="text-green-500 mr-2">✅</span> Filling
-                        out the <strong>Request an Estimate</strong> form on our
-                        website
+                      <li>
+                        Filling out the <strong>Request an Estimate</strong>{" "}
+                        form on our website
                       </li>
-                      <li className="flex items-center">
-                        <span className="text-green-500 mr-2">✅</span> Sending
-                        us an email at{" "}
+                      <li>
+                        Sending us an email at{" "}
                         <strong>info@healthycleanhomes.com</strong>
                       </li>
                     </ul>
@@ -86,7 +110,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-4">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     Can I reschedule or cancel a cleaning appointment?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -106,7 +130,7 @@ const FAQ = () => {
               </h2>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-5">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     What's included in a standard cleaning?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -126,7 +150,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-6">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     How is deep cleaning different from standard cleaning?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -147,7 +171,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-7">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     Do you offer specialized cleaning for move-ins and
                     move-outs?
                   </AccordionTrigger>
@@ -160,7 +184,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-8">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     Do you provide cleaning for Airbnb and vacation rentals?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -172,7 +196,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-9">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     What if my home hasn't been cleaned in a while?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -184,7 +208,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-10">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     Do you clean offices or commercial spaces?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -204,7 +228,7 @@ const FAQ = () => {
               </h2>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-11">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     Do you use eco-friendly cleaning products?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -216,7 +240,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-12">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     Are your cleaning products safe for pets and children?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -226,7 +250,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-13">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     Do you bring your own cleaning supplies and equipment?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -237,7 +261,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-14">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     Can I request specific cleaning products or avoid certain
                     chemicals?
                   </AccordionTrigger>
@@ -256,7 +280,7 @@ const FAQ = () => {
               </h2>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-15">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     Are your cleaners insured and background-checked?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -267,7 +291,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-16">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     How do I know I can trust your team in my home?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -280,7 +304,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-17">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     What happens if something is damaged during the cleaning?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -300,7 +324,7 @@ const FAQ = () => {
               </h2>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-18">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     How do I pay for my cleaning service?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -311,7 +335,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-19">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     Do you offer discounts for recurring services?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -322,7 +346,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-20">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     Is tipping required?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -333,7 +357,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-21">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     Are there any hidden fees?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -351,7 +375,7 @@ const FAQ = () => {
               </h2>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-22">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     What if I'm not happy with the cleaning?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -362,7 +386,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-23">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     How long does a typical cleaning take?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -384,7 +408,7 @@ const FAQ = () => {
                 </AccordionItem>
 
                 <AccordionItem value="item-24">
-                  <AccordionTrigger className="text-lg font-medium">
+                  <AccordionTrigger className="text-lg font-medium text-left">
                     Can I request the same cleaner each time?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
@@ -410,10 +434,10 @@ const FAQ = () => {
                   info@healthycleanhomes.com
                 </p>
                 <Link
-                  to="/quote"
-                  className="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md transition-colors duration-300 ease-out"
+                  to="/contact"
+                  className="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded-md transition-colors duration-300 ease-out"
                 >
-                  Request an Estimate
+                  Contact Us
                 </Link>
               </div>
             </div>
@@ -431,7 +455,7 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   );

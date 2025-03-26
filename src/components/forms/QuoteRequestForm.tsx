@@ -162,6 +162,9 @@ const QuoteRequestForm = () => {
                       <SelectItem value="construction">
                         Post-Construction Cleaning
                       </SelectItem>
+                      <SelectItem value="special">
+                        Special Occasion Cleaning
+                      </SelectItem>
                       <SelectItem value="other">Other Services</SelectItem>
                     </SelectContent>
                   </Select>
@@ -197,7 +200,7 @@ const QuoteRequestForm = () => {
             type="submit"
             className="w-full py-[2.5rem] hover:bg-yellow-400 hover:text-black transition-all duration-200 ease-out"
           >
-            Submit Quote Request
+            Get Your Free Estimate
           </Button>
         </form>
       </Form>

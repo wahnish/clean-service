@@ -22,19 +22,29 @@ const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Navbar />
-      <div className="pt-24 flex-grow">
+      <div className="flex-grow">
         {/* Hero Section */}
-        <div className="bg-primary text-white py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-              <p className="text-lg opacity-90">
-                Have questions or ready to schedule a cleaning? We're here to
-                help!
-              </p>
-            </div>
+        <section className="py-24 md:py-32 relative text-white">
+          {/* Background Image with Overlay */}
+          <div className="absolute inset-0 z-0 overflow-hidden">
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{
+                backgroundImage:
+                  "url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80')",
+                filter: "brightness(0.85)",
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40" />
           </div>
-        </div>
+          <div className="container mx-auto px-4 text-center relative z-10">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
+            <p className="text-xl max-w-3xl mx-auto">
+              Have questions or ready to schedule a cleaning? We're here to
+              help!
+            </p>
+          </div>
+        </section>
 
         {/* Contact Information */}
         <div className="container mx-auto px-4 py-16">
@@ -195,34 +205,6 @@ const Contact = () => {
                   View All Service Areas
                 </Link>
               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Map Section */}
-        <div className="bg-gray-100 py-12">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-2xl font-semibold mb-6 text-center">
-                Find Us
-              </h2>
-              <div className="bg-gray-300 h-[400px] rounded-lg flex items-center justify-center">
-                <p className="text-gray-600">
-                  [Google Map would be embedded here]
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Quote Request Section */}
-        <div className="bg-white py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-8">
-                Request a Free Quote
-              </h2>
-              <QuoteRequestForm />
             </div>
           </div>
         </div>

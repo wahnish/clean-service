@@ -169,7 +169,7 @@ const ServicesSection = () => {
 
         <div className="mt-12 text-center">
           <Button size="lg" asChild className="px-10 py-6">
-            <Link to="/services">View All Services</Link>
+            <Link to="/contact">Get Your Free Estimate</Link>
           </Button>
         </div>
       </div>

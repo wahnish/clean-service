@@ -64,7 +64,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/services/standard"
                   className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
                   Services
@@ -80,10 +80,10 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/locations"
+                  to="/locations/waxhaw"
                   className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
-                  Service Areas
+                  Locations
                 </Link>
               </li>
               <li>
@@ -105,88 +105,88 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Locations */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Our Services</h3>
+            <h3 className="text-lg font-semibold mb-4">Locations</h3>
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="/services/standard"
+                  to="/locations/waxhaw"
                   className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
-                  Standard Cleaning
+                  Waxhaw, NC
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services/deep"
+                  to="/locations/westley-chapel"
                   className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
-                  Deep Cleaning
+                  Westley Chapel, NC
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services/move"
+                  to="/locations/weddington"
                   className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
-                  Move In/Out Cleaning
+                  Weddington, NC
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services/recurring"
+                  to="/locations/marvin"
                   className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
-                  Recurring Cleaning
+                  Marvin, NC
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services/airbnb"
+                  to="/locations/ballantyne"
                   className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
-                  Airbnb Cleaning
+                  Ballantyne, NC
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services/onetime"
+                  to="/locations/monroe"
                   className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
-                  One-Time Cleaning
+                  Monroe, NC
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services/vacation"
+                  to="/locations/white-oaks"
                   className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
-                  Vacation Rental Cleaning
+                  White Oaks, NC
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services/construction"
+                  to="/locations/indian-trail"
                   className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
-                  Post-Construction Cleaning
+                  Indian Trail, NC
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services/office"
+                  to="/locations/stallings"
                   className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
-                  Office Cleaning
+                  Stallings, NC
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services/special"
+                  to="/locations/matthews"
                   className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
-                  Special Occasions
+                  Matthews, NC
                 </Link>
               </li>
             </ul>
@@ -197,7 +197,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <MapPin size={18} className="mr-2 mt-1 text-primary" />
+                <MapPin size={18} className="mr-2 mt-1 text-white" />
                 <span className="text-gray-300">
                   123 Cleaning Street
                   <br />
@@ -205,11 +205,11 @@ const Footer = () => {
                 </span>
               </li>
               <li className="flex items-center">
-                <Phone size={18} className="mr-2 text-primary" />
+                <Phone size={18} className="mr-2 text-white" />
                 <span className="text-gray-300">555-123-4567</span>
               </li>
               <li className="flex items-center">
-                <Mail size={18} className="mr-2 text-primary" />
+                <Mail size={18} className="mr-2 text-white" />
                 <a
                   href="mailto:info@healthycleanhomes.com"
                   className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"

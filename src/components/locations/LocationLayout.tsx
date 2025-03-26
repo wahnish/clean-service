@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
 import QuoteRequestForm from "../forms/QuoteRequestForm";
+import { Link } from "react-router-dom";
 
 interface LocationLayoutProps {
   title: string;
@@ -19,13 +20,50 @@ const LocationLayout: React.FC<LocationLayoutProps> = ({
       <Navbar />
       <main>
         {/* Hero Section */}
-        <section className="py-20 bg-primary text-white">
-          <div className="container mx-auto px-4 text-center">
+        <section className="py-24 md:py-32 relative text-white">
+          {/* Background Image with Overlay */}
+          <div className="absolute inset-0 z-0 overflow-hidden">
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{
+                backgroundImage: `url('https://images.unsplash.com/photo-${
+                  title.includes("Waxhaw")
+                    ? "1627483297929-0fbcf4d25454"
+                    : title.includes("Westley Chapel")
+                      ? "1627483297929-0fbcf4d25454"
+                      : title.includes("Weddington")
+                        ? "1627483297929-0fbcf4d25454"
+                        : title.includes("Marvin")
+                          ? "1627483297929-0fbcf4d25454"
+                          : title.includes("Ballantyne")
+                            ? "1627483297929-0fbcf4d25454"
+                            : title.includes("Monroe")
+                              ? "1627483297929-0fbcf4d25454"
+                              : title.includes("White Oaks")
+                                ? "1627483297929-0fbcf4d25454"
+                                : title.includes("Indian Trail")
+                                  ? "1627483297929-0fbcf4d25454"
+                                  : title.includes("Stallings")
+                                    ? "1627483297929-0fbcf4d25454"
+                                    : "1627483297929-0fbcf4d25454"
+                }?w=1200&q=80')`,
+                filter: "brightness(0.85)",
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40" />
+          </div>
+          <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">{title}</h1>
-            <p className="text-xl max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto mb-8">
               Professional cleaning services tailored to the unique needs of
               your home
             </p>
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-yellow-400 text-black hover:bg-yellow-500 h-10 px-6 py-2"
+            >
+              Get Your Free Estimate Now
+            </Link>
           </div>
         </section>
 
@@ -122,6 +160,32 @@ const LocationLayout: React.FC<LocationLayoutProps> = ({
           </div>
         </section>
 
+        {/* Call to Action Section */}
+        <section className="py-16 bg-primary text-white">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-semibold tracking-tight mb-6">
+              Ready to Experience the Difference?
+            </h2>
+            <p className="text-xl mb-8 max-w-2xl mx-auto">
+              Contact us today to schedule your cleaning service or request a
+              free estimate.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <a
+                href="tel:5551234567"
+                className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-primary hover:bg-white/90 h-10 px-4 py-2"
+              >
+                Call Us Now
+              </a>
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-white bg-transparent hover:bg-white/10 h-10 px-4 py-2"
+              >
+                Request a Free Estimate
+              </a>
+            </div>
+          </div>
+        </section>
         {/* Quote Request Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">

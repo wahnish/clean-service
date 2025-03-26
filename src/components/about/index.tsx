@@ -174,16 +174,16 @@ const About = () => {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
               {[
-                "Waxhaw",
-                "Westley Chapel",
-                "Weddington",
-                "Marvin",
-                "Ballantyne",
-                "Monroe",
-                "White Oaks",
-                "Indian Trail",
-                "Stallings",
-                "Matthews",
+                "Waxhaw, NC",
+                "Westley Chapel, NC",
+                "Weddington, NC",
+                "Marvin, NC",
+                "Ballantyne, NC",
+                "Monroe, NC",
+                "White Oaks, NC",
+                "Indian Trail, NC",
+                "Stallings, NC",
+                "Matthews, NC",
               ].map((location) => (
                 <div
                   key={location}

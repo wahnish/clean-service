@@ -54,6 +54,7 @@ function App() {
   return (
     <Suspense fallback={<p>Loading...</p>}>
       <>
+        {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -89,8 +90,12 @@ function App() {
             path="/services/construction"
             element={<PostConstructionCleaning />}
           />
+
+          {/* Add this before any catchall route */}
+          {import.meta.env.VITE_TEMPO === "true" && (
+            <Route path="/tempobook/*" />
+          )}
         </Routes>
-        {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
       </>
     </Suspense>
   );
