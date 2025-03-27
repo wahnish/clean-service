@@ -106,8 +106,9 @@ const ServicesSection = () => {
             Our Cleaning Services
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            We offer a variety of cleaning services to meet your needs, from
-            regular maintenance to deep cleaning and specialized services.
+            Whether you’re unwinding after a long day, welcoming friends, or
+            creating memories with family, we’re here to make sure your space
+            feels warm, inviting, and effortlessly comfortable.
           </p>
         </div>
 
