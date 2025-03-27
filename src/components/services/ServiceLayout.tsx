@@ -2,23 +2,44 @@ import { ReactNode } from "react";
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
 import QuoteRequestForm from "../forms/QuoteRequestForm";
+import { Button } from "../ui/button";
 
 interface ServiceLayoutProps {
   title: string;
   subtitle: string;
   children: ReactNode;
+  heroImage?: string;
 }
 
-const ServiceLayout = ({ title, subtitle, children }: ServiceLayoutProps) => {
+const ServiceLayout = ({
+  title,
+  subtitle,
+  children,
+  heroImage = "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80",
+}: ServiceLayoutProps) => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <main>
         {/* Hero Section */}
-        <section className="py-20 bg-primary text-white">
-          <div className="container mx-auto px-4 text-center">
+        <section
+          className="py-32 bg-primary text-white relative"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${heroImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">{title}</h1>
-            <p className="text-xl max-w-3xl mx-auto">{subtitle}</p>
+            <p className="text-xl max-w-3xl mx-auto mb-8">{subtitle}</p>
+            <Button
+              size="lg"
+              className="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-8 py-6"
+              asChild
+            >
+              <a href="#quote-form">Get Your Free Estimate Now</a>
+            </Button>
           </div>
         </section>
 

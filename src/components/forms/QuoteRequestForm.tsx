@@ -26,16 +26,12 @@ import {
 } from "../ui/form";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Calendar } from "../ui/calendar";
-import { Checkbox } from "../ui/checkbox";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
   email: z.string().email({ message: "Please enter a valid email address." }),
   phone: z.string().min(10, { message: "Please enter a valid phone number." }),
   serviceType: z.string().min(1, { message: "Please select a service type." }),
-  recaptcha: z.boolean().refine((val) => val === true, {
-    message: "Please verify you are not a robot.",
-  }),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -50,14 +46,26 @@ const QuoteRequestForm = () => {
       email: "",
       phone: "",
       serviceType: "",
-      recaptcha: false,
     },
   });
 
   function onSubmit(data: FormValues) {
     console.log(data);
-    // In a real application, you would send this data to your backend
-    setIsSubmitted(true);
+
+    // Send email to support@healthycleanhomes.com
+    // In a real application, this would be handled by a backend service
+    // Here we're simulating the email sending process
+    try {
+      // This is a mock implementation - in a real app, you would use a backend API
+      // or a service like EmailJS, SendGrid, etc.
+      console.log("Sending email to support@healthycleanhomes.com");
+      console.log("Form data:", JSON.stringify(data, null, 2));
+
+      // Set submitted state to true to show confirmation message
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
   }
 
   if (isSubmitted) {
@@ -67,9 +75,13 @@ const QuoteRequestForm = () => {
           <CheckCircle className="h-16 w-16 text-green-500" />
         </div>
         <h3 className="text-2xl font-semibold mb-2">Quote Request Received!</h3>
+        <p className="text-gray-600 mb-4">
+          Thank you for your interest in our cleaning services. Your request has
+          been sent to our team.
+        </p>
         <p className="text-gray-600 mb-6">
-          Thank you for your interest in our cleaning services. We'll review
-          your request and get back to you within 24 hours.
+          Please allow 1-2 business days for our team to review your request and
+          get back to you with a customized quote.
         </p>
         <Button onClick={() => setIsSubmitted(false)}>
           Submit Another Request
@@ -173,28 +185,6 @@ const QuoteRequestForm = () => {
               )}
             />
           </div>
-
-          <FormField
-            control={form.control}
-            name="recaptcha"
-            render={({ field }) => (
-              <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4">
-                <FormControl>
-                  <Checkbox
-                    checked={field.value}
-                    onCheckedChange={field.onChange}
-                  />
-                </FormControl>
-                <div className="space-y-1 leading-none">
-                  <FormLabel>I'm not a robot</FormLabel>
-                  <FormDescription>
-                    This is a placeholder for reCAPTCHA integration.
-                  </FormDescription>
-                </div>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
 
           <Button
             type="submit"
