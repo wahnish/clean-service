@@ -52,7 +52,7 @@ function Home() {
                 </p>
                 <div className="pt-4">
                   <Button asChild>
-                    <Link to="/contact">Get Your Free Estimate</Link>
+                    <Link to="/about">Learn More About Us</Link>
                   </Button>
                 </div>
               </div>

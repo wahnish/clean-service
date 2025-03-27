@@ -41,10 +41,17 @@ const About = () => {
         {/* Our Story Section */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-semibold mb-6 text-center">
-                Our Story
-              </h2>
+            <h2 className="text-3xl font-semibold mb-10 text-center">
+              Our Story
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-5xl mx-auto">
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&q=80"
+                  alt="Our Cleaning Team"
+                  className="rounded-lg shadow-md w-full h-auto"
+                />
+              </div>
               <div className="prose prose-lg max-w-none">
                 <p>
                   Healthy Clean Homes was founded in 2008 by the Johnson family
@@ -150,61 +157,6 @@ const About = () => {
                   that protect both your family's health and our environment for
                   future generations.
                 </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Our Team Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-semibold mb-12 text-center">
-              Meet Our Team
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="mb-4 relative mx-auto w-48 h-48 overflow-hidden rounded-full">
-                  <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80"
-                    alt="John Johnson"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold">John Johnson</h3>
-                <p className="text-gray-600">Founder & CEO</p>
-              </div>
-              <div className="text-center">
-                <div className="mb-4 relative mx-auto w-48 h-48 overflow-hidden rounded-full">
-                  <img
-                    src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&q=80"
-                    alt="Sarah Johnson"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold">Sarah Johnson</h3>
-                <p className="text-gray-600">Co-Founder & Operations Manager</p>
-              </div>
-              <div className="text-center">
-                <div className="mb-4 relative mx-auto w-48 h-48 overflow-hidden rounded-full">
-                  <img
-                    src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&q=80"
-                    alt="Emily Rodriguez"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold">Emily Rodriguez</h3>
-                <p className="text-gray-600">Customer Relations Manager</p>
-              </div>
-              <div className="text-center">
-                <div className="mb-4 relative mx-auto w-48 h-48 overflow-hidden rounded-full">
-                  <img
-                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=80"
-                    alt="Michael Chen"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold">Michael Chen</h3>
-                <p className="text-gray-600">Training Specialist</p>
               </div>
             </div>
           </div>
