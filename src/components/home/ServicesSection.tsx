@@ -19,10 +19,10 @@ const services = [
     image:
       "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80",
     features: [
-      "Dusting and wiping surfaces",
-      "Vacuuming and mopping floors",
-      "Bathroom sanitizing",
-      "Kitchen cleaning",
+      "Living Area Refreshing",
+      "Kitchen Cleaning",
+      "Bathroom Sanitizing",
+      "Bedrooms Rejuvenating",
     ],
   },
   {
@@ -34,23 +34,23 @@ const services = [
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80",
     features: [
       "Everything in standard cleaning",
-      "Inside appliance cleaning",
-      "Baseboards and door frames",
-      "Window sills and tracks",
+      "Kitchen Appliance Interiors & Degreasing",
+      "Bathroom Deep Disinfecting & Grout Cleaning",
+      "Living & Bedroom Detailed Cleaning",
     ],
   },
   {
     id: "move",
     title: "Move In/Out Cleaning",
     description:
-      "Start fresh in your new home or leave your old one spotless with our specialized move in/out cleaning service.",
+      "Start fresh in your new home or leave your old one spotless with our specialized move in/out cleaning services. Removes all trace of previous occupants.",
     image:
       "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=600&q=80",
     features: [
-      "Deep cleaning of all rooms",
-      "Inside cabinets and drawers",
-      "Refrigerator and oven cleaning",
-      "Window cleaning",
+      "Deep Cleaning of All Rooms",
+      "Inside Cabinets and Drawers",
+      "Refrigerator and Oven Cleaning",
+      "Window & Blinds Cleaning (Interior Only)",
     ],
   },
   {
@@ -61,10 +61,10 @@ const services = [
     image:
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&q=80",
     features: [
-      "Quick turnaround between guests",
-      "Linen changing and laundry",
-      "Restocking essentials",
-      "Special attention to guest areas",
+      "Quick Turnaround Between Guests",
+      "Flexible Scheduling",
+      "Enhanced Guest Satisfaction",
+      "Personalized Cleaning Plans",
     ],
   },
   {
@@ -75,10 +75,10 @@ const services = [
     image:
       "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600&q=80",
     features: [
-      "Deep cleaning between guests",
-      "Outdoor area maintenance",
-      "Inventory management",
-      "Damage reporting",
+      "Quick Turnaround Between Guests",
+      "Guest-Ready Presentation",
+      "Enhanced Sanitzation Protocols",
+      "Personalized Cleaning Plans",
     ],
   },
   {
@@ -89,10 +89,10 @@ const services = [
     image:
       "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80",
     features: [
-      "Removal of construction debris",
-      "Dust removal from all surfaces",
-      "Window and glass cleaning",
-      "Floor scrubbing and polishing",
+      "Thorough Dirt & Dust Removal",
+      "Complete Surface Cleaning & Sanitization",
+      "Detailed Floor & Window Care",
+      "Final Inspection & Pristine Finish Guarantee",
     ],
   },
 ];
@@ -106,9 +106,9 @@ const ServicesSection = () => {
             Our Cleaning Services
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Whether you’re unwinding after a long day, welcoming friends, or
-            creating memories with family, we’re here to make sure your space
-            feels warm, inviting, and effortlessly comfortable.
+            Whether you’re unwinding after a long day or creating memories with
+            family, we make sure your space feels warm, inviting, and
+            effortlessly comfortable.
           </p>
         </div>
 
