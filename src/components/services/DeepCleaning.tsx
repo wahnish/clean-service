@@ -69,11 +69,11 @@ export default function DeepCleaning() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-center mb-2">
-                  Eliminates Built-up Dirt
+                  Immaculate, Fresh Spaces
                 </h3>
                 <p className="text-gray-700 text-center">
-                  Removes accumulated dirt and grime from hard-to-reach areas
-                  throughout your home.
+                  Restores the original beauty of your home by removing hidden
+                  dirt, dust, and grime.
                 </p>
               </CardContent>
             </Card>
@@ -100,11 +100,11 @@ export default function DeepCleaning() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-center mb-2">
-                  Improved Air Quality
+                  Healthier Environment
                 </h3>
                 <p className="text-gray-700 text-center">
-                  Significantly enhances indoor air quality by removing dust,
-                  allergens, and pollutants.
+                  Creates a cleaner home by reducing germs, bacteria, and
+                  allergens from every surface.
                 </p>
               </CardContent>
             </Card>
@@ -128,11 +128,11 @@ export default function DeepCleaning() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-center mb-2">
-                  Healthier Environment
+                  Enhanced Comfort
                 </h3>
                 <p className="text-gray-700 text-center">
-                  Creates a healthier living space by reducing allergens and
-                  bacteria throughout your home.
+                  Makes your home more inviting by ensuring every room feels
+                  fresh, clean, and welcoming.
                 </p>
               </CardContent>
             </Card>
@@ -162,11 +162,11 @@ export default function DeepCleaning() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-center mb-2">
-                  Extended Fixture Life
+                  Reduced Stress
                 </h3>
                 <p className="text-gray-700 text-center">
-                  Prolongs the life of your furniture, fixtures, and appliances
-                  by removing damaging dirt and grime.
+                  Enjoy peace of mind knowing your home is deeply cleaned,
+                  sanitized, and refreshed.
                 </p>
               </CardContent>
             </Card>
@@ -192,11 +192,11 @@ export default function DeepCleaning() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-center mb-2">
-                  Family Health
+                  Improved Indoor Air Quality
                 </h3>
                 <p className="text-gray-700 text-center">
-                  Protects your family's health by eliminating harmful bacteria,
-                  mold, and allergens.
+                  Enhances your breathing comfort by removing airborne
+                  allergens, dust, and pollutants. mold, and allergens.
                 </p>
               </CardContent>
             </Card>
@@ -223,11 +223,11 @@ export default function DeepCleaning() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-center mb-2">
-                  Perfect Reset
+                  Longer-Lasting Cleanliness
                 </h3>
                 <p className="text-gray-700 text-center">
-                  Ideal for seasonal cleaning or preparing your home for special
-                  occasions and gatherings.
+                  Delivers a thorough, detailed clean that helps your home stay
+                  fresher and cleaner for longer periods.
                 </p>
               </CardContent>
             </Card>

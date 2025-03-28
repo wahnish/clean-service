@@ -209,16 +209,16 @@ const StandardCleaning = () => {
                     strokeLinejoin="round"
                     className="text-white"
                   >
-                    <path d="M8 19h8a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2Z" />
-                    <path d="M12 12h.01" />
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                    <path d="m9 12 2 2 4-4" />
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-center mb-2">
-                  Improved Air Quality
+                  Stress-Free Living
                 </h3>
                 <p className="text-gray-700 text-center">
-                  Reduce allergens and improve indoor air quality for a
-                  healthier home.
+                  Enjoy a stress-free lifestyle in a consistently clean
+                  environment.
                 </p>
               </CardContent>
             </Card>
