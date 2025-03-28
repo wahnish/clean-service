@@ -105,7 +105,7 @@ const HeroSection = () => {
                     <path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14" />
                   </svg>
                 </div>
-                <span className="font-medium">Eco-Friendly</span>
+                <span className="font-medium">Exceptional Quality</span>
               </div>
             </div>
 

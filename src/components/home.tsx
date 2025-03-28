@@ -23,8 +23,8 @@ function Home() {
                 About Us
               </h2>
               <p className="text-xl text-muted-foreground mb-6">
-                Family-owned and operated, Healthy Clean Homes has been serving
-                the local community for over 15 years.
+                Family-owned and operated, Healthy Clean Homes is proud to serve
+                our local community with dedication and care.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
