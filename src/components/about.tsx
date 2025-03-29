@@ -54,17 +54,17 @@ const About = () => {
               </div>
               <div className="prose prose-lg max-w-none">
                 <p className="py-2">
-                  Healthy Clean Homes is a family-owned and operated cleaning
-                  service dedicated to making homes healthier, happier, and more
-                  comfortable for families throughout our community.
-                </p>
-                <p>
-                  {" "}
-                  We believe that a clean home creates a healthier space for
-                  your family to thrive. With meticulous attention to detail and
-                  a dedication to reliable service, we strive to enhance your
-                  comfort, reduce your stress, and give you peace of mind in a
-                  fresh, spotless home.
+                  Healthy Clean Homes started with a simple vision—to help
+                  families like ours enjoy cleaner, healthier spaces where
+                  memories can be made. As a family-owned and operated business,
+                  our commitment to excellence and a personal touch guides
+                  everything we do. We take pride in providing reliable,
+                  meticulous cleaning services to homes throughout our
+                  community, treating each one as if it were our own. Every home
+                  we serve reminds us why we began this journey: to create
+                  comforting spaces that families truly love coming home to.
+                  From our family to yours, we're here to make life easier and
+                  homes happier.
                 </p>
               </div>
             </div>
