@@ -144,11 +144,11 @@ const About = () => {
                     <path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Sustainability</h3>
+                <h3 className="text-xl font-semibold mb-2">Excellence</h3>
                 <p className="text-gray-600">
-                  We're committed to using eco-friendly products and practices
-                  that protect both your family's health and our environment for
-                  future generations.
+                  We set high standards for our work, striving consistently to
+                  exceed expectations and deliver exceptional results that speak
+                  for themselves.
                 </p>
               </div>
             </div>
