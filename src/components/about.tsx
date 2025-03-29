@@ -53,25 +53,18 @@ const About = () => {
                 />
               </div>
               <div className="prose prose-lg max-w-none">
-                <p>
-                  Healthy Clean Homes was founded in 2008 by the Johnson family
-                  with a simple mission: to provide exceptional cleaning
-                  services that promote healthier living environments for
-                  families in our community.
+                <p className="py-2">
+                  Healthy Clean Homes is a family-owned and operated cleaning
+                  service dedicated to making homes healthier, happier, and more
+                  comfortable for families throughout our community.
                 </p>
                 <p>
-                  What started as a small operation with just two family members
-                  has grown into a trusted cleaning service with a team of over
-                  20 dedicated professionals. Despite our growth, we've
-                  maintained our family values and personal touch in everything
-                  we do.
-                </p>
-                <p>
-                  We believe that a clean home is more than just appearance—it's
-                  about creating a healthy space where families can thrive.
-                  That's why we've invested in eco-friendly cleaning products
-                  and advanced techniques that deliver superior results without
-                  compromising your family's health or the environment.
+                  {" "}
+                  We believe that a clean home creates a healthier space for
+                  your family to thrive. With meticulous attention to detail and
+                  a dedication to reliable service, we strive to enhance your
+                  comfort, reduce your stress, and give you peace of mind in a
+                  fresh, spotless home.
                 </p>
               </div>
             </div>
