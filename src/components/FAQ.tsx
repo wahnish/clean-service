@@ -159,7 +159,7 @@ const FAQ = () => {
                       standard clean PLUS:
                     </p>
                     <ul className="list-disc pl-5 mt-2 space-y-1">
-                      <li>Cleaning behind and under appliances</li>
+                      <li>Cleaning inside, behind, and under appliances</li>
                       <li>Scrubbing grout and tile</li>
                       <li>
                         Cleaning baseboards, ceiling fans, and light fixtures
@@ -229,23 +229,24 @@ const FAQ = () => {
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-11">
                   <AccordionTrigger className="text-lg font-medium text-left">
-                    Do you use eco-friendly cleaning products?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-600">
-                    Yes! We use non-toxic, biodegradable products that are tough
-                    on dirt but safe for kids, pets, and sensitive skin. Our
-                    cleaning solutions are free from harsh chemicals and strong
-                    fragrances.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-12">
-                  <AccordionTrigger className="text-lg font-medium text-left">
                     Are your cleaning products safe for pets and children?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
                     Absolutely. Our products are non-toxic and safe for all
                     members of the family, including children and pets.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-12">
+                  <AccordionTrigger className="text-lg font-medium text-left">
+                    Can I provide my own specialized cleaning products for you
+                    to use?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-600">
+                    Absolutely! If you have specific or specialized cleaning
+                    products you prefer, we’re happy to use them during your
+                    cleaning service. Just let us know in advance, and we'll
+                    gladly accommodate your request.
                   </AccordionContent>
                 </AccordionItem>
 

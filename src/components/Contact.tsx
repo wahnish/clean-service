@@ -167,11 +167,13 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-lg">Office Address</h3>
+                    <h3 className="font-medium text-lg">Mailing Address</h3>
                     <p className="text-gray-600">
-                      123 Cleaning Street
+                      3116 Weddington Rd
                       <br />
-                      Seattle, WA 98101
+                      Ste 900 PMB 2032
+                      <br />
+                      Matthews, NC 28105
                     </p>
                   </div>
                 </div>
