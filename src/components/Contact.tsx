@@ -31,7 +31,7 @@ const Contact = () => {
               className="absolute inset-0 bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80')",
+                  "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80')",
                 filter: "brightness(0.85)",
               }}
             />
@@ -200,12 +200,6 @@ const Contact = () => {
                   Ballantyne, Monroe, White Oaks, Indian Trail, Stallings, and
                   Matthews.
                 </p>
-                <Link
-                  to="/locations"
-                  className="text-primary hover:underline font-medium"
-                >
-                  View All Service Areas
-                </Link>
               </div>
             </div>
           </div>

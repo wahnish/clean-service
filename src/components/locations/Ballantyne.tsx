@@ -5,7 +5,7 @@ const Ballantyne = () => {
   return (
     <LocationLayout
       title="The Best Cleaning Service In Ballantyne, NC"
-      imageUrl="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800&q=80"
+      imageUrl="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80"
       description={
         <>
           <p className="text-lg text-muted-foreground mb-4">

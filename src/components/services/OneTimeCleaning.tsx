@@ -32,7 +32,7 @@ const OneTimeCleaning = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80"
+                src="/images/tempo-image-20250401T154534507Z.png"
                 alt="One-Time Cleaning Service"
                 className="w-full h-auto"
               />

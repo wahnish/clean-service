@@ -199,9 +199,13 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 text-white" />
                 <span className="text-gray-300">
-                  123 Cleaning Street
+                  Healthy Clean Homes
                   <br />
-                  Seattle, WA 98101
+                  3116 Weddington Rd Ste 900
+                  <br />
+                  PMB 2032
+                  <br />
+                  Matthews, NC 28105
                 </span>
               </li>
               <li className="flex items-center">
@@ -211,10 +215,10 @@ const Footer = () => {
               <li className="flex items-center">
                 <Mail size={18} className="mr-2 text-white" />
                 <a
-                  href="mailto:info@healthycleanhomes.com"
+                  href="mailto:support@healthycleanhomes.com"
                   className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
-                  info@healthycleanhomes.com
+                  support@healthycleanhomes.com
                 </a>
               </li>
             </ul>

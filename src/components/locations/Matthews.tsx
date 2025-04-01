@@ -5,7 +5,7 @@ const Matthews = () => {
   return (
     <LocationLayout
       title="The Best Cleaning Service In Matthews, NC"
-      imageUrl="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
+      imageUrl="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80"
       description={
         <>
           <p className="text-lg text-muted-foreground mb-4">

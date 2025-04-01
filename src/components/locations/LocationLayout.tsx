@@ -120,8 +120,7 @@ const LocationLayout: React.FC<LocationLayoutProps> = ({
                   title: "Recurring Cleaning",
                   description:
                     "Scheduled cleaning services on a weekly, bi-weekly, or monthly basis.",
-                  image:
-                    "https://images.unsplash.com/photo-1563453392212-326f5e854473?w=600&q=80",
+                  image: "/images/tempo-image-20250401T205935432Z.png",
                 },
                 {
                   title: "Airbnb Cleaning",

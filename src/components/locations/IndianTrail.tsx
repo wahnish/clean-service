@@ -5,7 +5,7 @@ const IndianTrail = () => {
   return (
     <LocationLayout
       title="The Best Cleaning Service In Indian Trail, NC"
-      imageUrl="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80"
+      imageUrl="https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=1200&q=80"
       description={
         <>
           <p className="text-lg text-muted-foreground mb-4">

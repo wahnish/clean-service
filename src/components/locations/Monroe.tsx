@@ -5,7 +5,7 @@ const Monroe = () => {
   return (
     <LocationLayout
       title="The Best Cleaning Service In Monroe, NC"
-      imageUrl="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80"
+      imageUrl="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80"
       description={
         <>
           <p className="text-lg text-muted-foreground mb-4">

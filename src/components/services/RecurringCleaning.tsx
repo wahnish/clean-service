@@ -6,7 +6,7 @@ const RecurringCleaning = () => {
     <ServiceLayout
       title="Recurring Cleaning Service"
       subtitle="Enjoy a consistently clean home without lifting a finger"
-      heroImage="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80"
+      heroImage="https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=1200&q=80"
     >
       {/* Service Overview */}
       <section className="py-16 bg-white">

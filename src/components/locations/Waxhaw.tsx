@@ -5,7 +5,7 @@ const Waxhaw = () => {
   return (
     <LocationLayout
       title="The Best Cleaning Service In Waxhaw, NC"
-      imageUrl="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80"
+      imageUrl="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80"
       description={
         <>
           <p className="text-lg text-muted-foreground mb-4">

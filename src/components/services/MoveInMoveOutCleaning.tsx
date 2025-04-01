@@ -6,7 +6,7 @@ const MoveInMoveOutCleaning = () => {
     <ServiceLayout
       title="Move In/Move Out Cleaning Service"
       subtitle="Start fresh in your new home or leave your old one spotless"
-      heroImage="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80"
+      heroImage="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80"
     >
       {/* Service Overview */}
       <section className="py-16 bg-white">

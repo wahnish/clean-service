@@ -17,7 +17,7 @@ const About = () => {
               className="absolute inset-0 bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80')",
+                  "url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80')",
                 filter: "brightness(0.85)",
               }}
             />
@@ -44,10 +44,10 @@ const About = () => {
             <h2 className="text-3xl font-semibold mb-10 text-center">
               Our Story
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-7xl mx-auto">
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&q=80"
+                  src="/images/tempo-image-20250401T173153929Z.png"
                   alt="Our Cleaning Team"
                   className="rounded-lg shadow-md w-full h-auto"
                 />

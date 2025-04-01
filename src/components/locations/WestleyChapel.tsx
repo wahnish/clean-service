@@ -6,7 +6,7 @@ const WestleyChapel = () => {
   return (
     <LocationLayout
       title="The Best Cleaning Service In Westley Chapel, NC"
-      imageUrl="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
+      imageUrl="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80"
       description={
         <>
           <p className="text-lg text-muted-foreground mb-4">

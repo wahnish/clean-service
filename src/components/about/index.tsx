@@ -25,7 +25,7 @@ const About = () => {
 
         {/* Our Story Section */}
         <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 max-w-7xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-semibold tracking-tight mb-6">
@@ -50,7 +50,7 @@ const About = () => {
               </div>
               <div className="rounded-lg overflow-hidden shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80"
+                  src="/images/tempo-image-20250401T173153929Z.png"
                   alt="Our cleaning team"
                   className="w-full h-auto"
                 />

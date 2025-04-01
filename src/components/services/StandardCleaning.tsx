@@ -6,7 +6,7 @@ const StandardCleaning = () => {
     <ServiceLayout
       title="Standard Cleaning Service"
       subtitle="Professional cleaning for your home on a regular basis"
-      heroImage="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80"
+      heroImage="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80"
     >
       {/* Service Overview */}
       <section className="py-16 bg-white">

@@ -5,7 +5,7 @@ const Marvin = () => {
   return (
     <LocationLayout
       title="The Best Cleaning Service In Marvin, NC"
-      imageUrl="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80"
+      imageUrl="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=1200&q=80"
       description={
         <>
           <p className="text-lg text-muted-foreground mb-4">

@@ -5,7 +5,7 @@ const Weddington = () => {
   return (
     <LocationLayout
       title="The Best Cleaning Service In Weddington, NC"
-      imageUrl="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+      imageUrl="https://images.unsplash.com/photo-1616137466211-f939a420be84?w=1200&q=80"
       description={
         <>
           <p className="text-lg text-muted-foreground mb-4">

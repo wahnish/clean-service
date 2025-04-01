@@ -5,7 +5,7 @@ const Stallings = () => {
   return (
     <LocationLayout
       title="The Best Cleaning Service In Stallings, NC"
-      imageUrl="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=80"
+      imageUrl="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80"
       description={
         <>
           <p className="text-lg text-muted-foreground mb-4">

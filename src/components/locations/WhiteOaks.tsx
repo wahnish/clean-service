@@ -5,7 +5,7 @@ const WhiteOaks = () => {
   return (
     <LocationLayout
       title="The Best Cleaning Service In White Oaks, NC"
-      imageUrl="https://images.unsplash.com/photo-1600585154526-990dced4db3d?w=800&q=80"
+      imageUrl="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1200&q=80"
       description={
         <>
           <p className="text-lg text-muted-foreground mb-4">
