@@ -12,7 +12,6 @@ const services = [
   { name: "One-Time Cleaning", path: "/services/onetime" },
   { name: "Vacation Rental Cleaning", path: "/services/vacation" },
   { name: "Post-Construction Cleaning", path: "/services/construction" },
-  { name: "Special Occasions", path: "/services/special" },
 ];
 
 const locations = [

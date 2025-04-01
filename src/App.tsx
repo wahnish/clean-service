@@ -41,9 +41,6 @@ const VacationRentalCleaning = lazy(
 const PostConstructionCleaning = lazy(
   () => import("./components/services/PostConstructionCleaning"),
 );
-const SpecialOccasions = lazy(
-  () => import("./components/services/SpecialOccasions"),
-);
 
 // Lazy load additional pages
 const FAQ = lazy(() => import("./components/FAQ"));
@@ -93,7 +90,6 @@ function App() {
             path="/services/construction"
             element={<PostConstructionCleaning />}
           />
-          <Route path="/services/special" element={<SpecialOccasions />} />
 
           {/* Add this before any catchall route */}
           {import.meta.env.VITE_TEMPO === "true" && (
