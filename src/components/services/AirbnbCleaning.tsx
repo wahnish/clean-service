@@ -245,13 +245,17 @@ const AirbnbCleaning = () => {
                     height="48"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="white"
+                    stroke="currentColor"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="text-white"
                   >
-                    <path d="M19 3v12h-5c-.023-3.681.184-7.406 5-12zm0 12v6h-1v1h-10v-1h-1v-6h12z" />
-                    <path d="M4 15h4v7h-4z" />
+                    <path d="M8 5h8" />
+                    <path d="M8 18h8" />
+                    <path d="M8 11h8" />
+                    <path d="M2 9v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9" />
+                    <path d="M20 3H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z" />
                   </svg>
                 </div>
                 <div className="w-3/4 p-6">
@@ -344,14 +348,17 @@ const AirbnbCleaning = () => {
                     height="48"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="white"
+                    stroke="currentColor"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="text-white"
                   >
-                    <path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5" />
-                    <line x1="10" y1="5" x2="8" y2="7" />
-                    <line x1="2" y1="16" x2="22" y2="16" />
+                    <path d="M8 7h8" />
+                    <path d="M8 17h8" />
+                    <path d="M12 7v10" />
+                    <path d="M17 12h3a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h3" />
+                    <path d="M8 12a4 4 0 0 1 8 0" />
                   </svg>
                 </div>
                 <div className="w-3/4 p-6">
@@ -440,16 +447,16 @@ const AirbnbCleaning = () => {
                     height="48"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="white"
+                    stroke="currentColor"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="text-white"
                   >
                     <path d="M2 9V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5" />
-                    <path d="M2 11v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5" />
-                    <path d="M2 9h20" />
-                    <path d="M8 5v4" />
-                    <path d="M16 5v4" />
+                    <path d="M2 11v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-9" />
+                    <path d="M2 12h20" />
+                    <path d="M4 9h16" />
                   </svg>
                 </div>
                 <div className="w-3/4 p-6">
@@ -538,15 +545,17 @@ const AirbnbCleaning = () => {
                     height="48"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="white"
+                    stroke="currentColor"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="text-white"
                   >
-                    <rect width="18" height="18" x="3" y="3" rx="2" />
-                    <path d="M7 7v10" />
-                    <path d="M17 7v10" />
-                    <path d="M3 12h18" />
+                    <path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3" />
+                    <path d="M2 11v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H6v-2a2 2 0 0 0-4 0Z" />
+                    <path d="M4 18v2" />
+                    <path d="M20 18v2" />
+                    <path d="M12 4v9" />
                   </svg>
                 </div>
                 <div className="w-3/4 p-6">

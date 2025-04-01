@@ -237,24 +237,25 @@ const RecurringCleaning = () => {
                 <div className="rounded-full bg-primary w-16 h-16 flex items-center justify-center mb-4 mx-auto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="48"
+                    height="48"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="currentColor"
+                    stroke="white"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="text-white"
                   >
-                    <rect width="18" height="18" x="3" y="3" rx="2" />
-                    <path d="M16 3v18" />
-                    <path d="M8 8h.01" />
-                    <path d="M12 8h.01" />
-                    <path d="M8 12h.01" />
-                    <path d="M12 12h.01" />
-                    <path d="M8 16h.01" />
-                    <path d="M12 16h.01" />
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                    <path d="M8 14h.01" />
+                    <path d="M12 14h.01" />
+                    <path d="M16 14h.01" />
+                    <path d="M8 18h.01" />
+                    <path d="M12 18h.01" />
+                    <path d="M16 18h.01" />
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-center mb-4">
@@ -328,22 +329,25 @@ const RecurringCleaning = () => {
                 <div className="rounded-full bg-primary w-16 h-16 flex items-center justify-center mb-4 mx-auto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="48"
+                    height="48"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="currentColor"
+                    stroke="white"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="text-white"
                   >
-                    <rect width="18" height="18" x="3" y="3" rx="2" />
-                    <path d="M16 3v18" />
-                    <path d="M8 12h.01" />
-                    <path d="M12 8h.01" />
-                    <path d="M8 16h.01" />
-                    <path d="M12 16h.01" />
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                    <path d="M8 14h.01" />
+                    <path d="M16 14h.01" />
+                    <path d="M8 18h.01" />
+                    <path d="M16 18h.01" />
+                    <path d="M12 14h2" />
+                    <path d="M12 18h2" />
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-center mb-4">
@@ -417,19 +421,19 @@ const RecurringCleaning = () => {
                 <div className="rounded-full bg-primary w-16 h-16 flex items-center justify-center mb-4 mx-auto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="48"
+                    height="48"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="currentColor"
+                    stroke="white"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="text-white"
                   >
-                    <rect width="18" height="18" x="3" y="3" rx="2" />
-                    <path d="M16 3v18" />
-                    <path d="M8 8h.01" />
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
                     <path d="M12 16h.01" />
                   </svg>
                 </div>

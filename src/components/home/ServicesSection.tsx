@@ -16,8 +16,7 @@ const services = [
     title: "Standard Cleaning",
     description:
       "Maintain a consistently clean home with our thorough standard cleaning service. Perfect for busy households that need weekly or bi-weekly maintenance.",
-    image:
-      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80",
+    image: "/images/tempo-image-20250401T153406505Z.png",
     features: [
       "Living Area Refreshing",
       "Kitchen Cleaning",
