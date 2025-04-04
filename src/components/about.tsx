@@ -48,7 +48,7 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-7xl mx-auto">
               <div>
                 <img
-                  src="/images/tempo-image-20250401T173153929Z.png"
+                  src="/images/tempo-image-20250404T203447676Z.png"
                   alt="Our Cleaning Team"
                   className="rounded-lg shadow-md w-full h-auto"
                 />
