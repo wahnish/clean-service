@@ -3,6 +3,7 @@ import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
+import QuoteRequestForm from "./forms/QuoteRequestForm";
 
 const About = () => {
   return (
@@ -172,6 +173,18 @@ const About = () => {
             >
               <Link to="/contact">Request a Quote</Link>
             </Button>
+          </div>
+        </section>
+
+        {/* Quote Request Form Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-semibold mb-8 text-center">
+              Get Your Free Quote Today
+            </h2>
+            <div className="max-w-3xl mx-auto">
+              <QuoteRequestForm />
+            </div>
           </div>
         </section>
       </main>
