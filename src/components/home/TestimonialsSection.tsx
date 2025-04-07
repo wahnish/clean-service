@@ -4,26 +4,26 @@ import { Card, CardContent } from "../ui/card";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    location: "Seattle, WA",
+    name: "Sarah J.",
+    location: "Waxhaw, NC",
     rating: 5,
-    text: "I've been using Healthy Clean Homes for over a year now, and I couldn't be happier with their service. My home always looks and smells amazing after they're done!",
+    text: "I've been using Healthy Clean Homes, and I couldn't be happier with their service. My home always looks and smells amazing after they're done!",
     image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah",
   },
   {
     id: 2,
-    name: "Michael Rodriguez",
-    location: "Bellevue, WA",
+    name: "Michelle R.",
+    location: "Wesley Chapel, NC",
     rating: 5,
     text: "The attention to detail is incredible. They clean areas I wouldn't even think of, and they're always on time and professional.",
     image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Michael",
   },
   {
     id: 3,
-    name: "Emily Chen",
-    location: "Redmond, WA",
+    name: "Emily C.",
+    location: "Weddington, NC",
     rating: 5,
-    text: "As a busy professional, having Healthy Clean Homes take care of my apartment has been a game-changer. Worth every penny!",
+    text: "I'm a single parent, so having Healthy Clean Homes take care of my home has been a game-changer. Worth every penny!",
     image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Emily",
   },
 ];
@@ -82,7 +82,7 @@ const TestimonialsSection = () => {
                 <Star key={i} size={16} fill="#FFD700" color="#FFD700" />
               ))}
             </div>
-            <span className="ml-2 text-gray-600">from 200+ reviews</span>
+            <span className="ml-2 text-gray-600">review average</span>
           </div>
         </div>
       </div>

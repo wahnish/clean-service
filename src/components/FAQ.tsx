@@ -431,8 +431,8 @@ const FAQ = () => {
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-4">
                 <p className="text-gray-700 font-medium">
-                  <span className="text-primary mr-2">👉</span> 555-123-4567 |
-                  info@healthycleanhomes.com
+                  <span className="text-primary mr-2">👉</span> 980-300-0404 |
+                  support@healthycleanhomes.com
                 </p>
                 <Link
                   to="/contact"

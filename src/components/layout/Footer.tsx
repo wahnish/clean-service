@@ -122,7 +122,7 @@ const Footer = () => {
                   to="/locations/westley-chapel"
                   className="text-gray-300 hover:text-white transition-colors duration-300 ease-out"
                 >
-                  Westley Chapel, NC
+                  Wesley Chapel, NC
                 </Link>
               </li>
               <li>
@@ -210,7 +210,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="mr-2 text-white" />
-                <span className="text-gray-300">555-123-4567</span>
+                <span className="text-gray-300">980-300-0404</span>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="mr-2 text-white" />

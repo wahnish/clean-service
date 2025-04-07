@@ -27,8 +27,8 @@ const About = () => {
           <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About Us</h1>
             <p className="text-xl max-w-3xl mx-auto mb-8">
-              Family-owned and operated, providing professional cleaning
-              services for over 15 years
+              Family-owned and operated, providing healthy and clean living
+              services - from our home to yours
             </p>
             <a
               href="/contact"

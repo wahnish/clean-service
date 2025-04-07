@@ -214,11 +214,11 @@ const StandardCleaning = () => {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-center mb-2">
-                  Stress-Free Living
+                  Improved Air Quality
                 </h3>
                 <p className="text-gray-700 text-center">
-                  Enjoy a stress-free lifestyle in a consistently clean
-                  environment.
+                  Breathe easier with reduced dust, allergens, and pollutants in
+                  your freshly cleaned home.
                 </p>
               </CardContent>
             </Card>

@@ -16,7 +16,7 @@ const services = [
 
 const locations = [
   { name: "Waxhaw, NC", path: "/locations/waxhaw" },
-  { name: "Westley Chapel, NC", path: "/locations/westley-chapel" },
+  { name: "Wesley Chapel, NC", path: "/locations/westley-chapel" },
   { name: "Weddington, NC", path: "/locations/weddington" },
   { name: "Marvin, NC", path: "/locations/marvin" },
   { name: "Ballantyne, NC", path: "/locations/ballantyne" },
@@ -150,7 +150,7 @@ const Navbar = () => {
             <span
               className={`font-medium ${isScrolled ? "text-white" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out`}
             >
-              555-123-4567
+              980-300-0404
             </span>
           </div>
           <Button

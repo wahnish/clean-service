@@ -142,9 +142,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-lg">Phone</h3>
-                    <p className="text-gray-600">555-123-4567</p>
+                    <p className="text-gray-600">980-300-0404</p>
                     <p className="text-sm text-gray-500 mt-1">
-                      Monday-Friday, 8am-6pm
+                      Monday-Friday, 8am-5pm
                     </p>
                   </div>
                 </div>
@@ -155,7 +155,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-lg">Email</h3>
-                    <p className="text-gray-600">info@healthycleanhomes.com</p>
+                    <p className="text-gray-600">
+                      support@healthycleanhomes.com
+                    </p>
                     <p className="text-sm text-gray-500 mt-1">
                       We respond within 24 hours
                     </p>
@@ -185,8 +187,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-medium text-lg">Business Hours</h3>
                     <div className="text-gray-600">
-                      <p>Monday-Friday: 8:00 AM - 6:00 PM</p>
-                      <p>Saturday: 9:00 AM - 4:00 PM</p>
+                      <p>Monday-Friday: 8:00 AM - 5:00 PM</p>
+                      <p>Saturday: Closed</p>
                       <p>Sunday: Closed</p>
                     </div>
                   </div>
@@ -196,7 +198,7 @@ const Contact = () => {
               <div className="mt-8">
                 <h3 className="font-medium text-lg mb-3">Service Areas</h3>
                 <p className="text-gray-600 mb-2">
-                  We proudly serve Waxhaw, Westley Chapel, Weddington, Marvin,
+                  We proudly serve Waxhaw, Wesley Chapel, Weddington, Marvin,
                   Ballantyne, Monroe, White Oaks, Indian Trail, Stallings, and
                   Matthews.
                 </p>

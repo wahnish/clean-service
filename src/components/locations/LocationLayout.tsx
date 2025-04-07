@@ -29,7 +29,7 @@ const LocationLayout: React.FC<LocationLayoutProps> = ({
                 backgroundImage: `url('https://images.unsplash.com/photo-${
                   title.includes("Waxhaw")
                     ? "1627483297929-0fbcf4d25454"
-                    : title.includes("Westley Chapel")
+                    : title.includes("Wesley Chapel")
                       ? "1627483297929-0fbcf4d25454"
                       : title.includes("Weddington")
                         ? "1627483297929-0fbcf4d25454"
