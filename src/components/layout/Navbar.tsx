@@ -60,10 +60,10 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden lg:flex items-center xl:space-x-8 lg:space-x-4">
           <Link
             to="/"
-            className={`${isScrolled ? "text-white" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out font-medium`}
+            className={`${isScrolled ? "text-white" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out font-medium xl:text-base lg:text-sm`}
           >
             Home
           </Link>
@@ -72,7 +72,7 @@ const Navbar = () => {
           <div className="relative group">
             <div className="flex items-center cursor-pointer">
               <div
-                className={`${isScrolled ? "text-white" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out font-medium flex items-center`}
+                className={`${isScrolled ? "text-white" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out font-medium flex items-center xl:text-base lg:text-sm`}
               >
                 Services
                 <ChevronDown size={16} className="ml-1" />
@@ -95,7 +95,7 @@ const Navbar = () => {
 
           <Link
             to="/about"
-            className={`${isScrolled ? "text-white" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out font-medium`}
+            className={`${isScrolled ? "text-white" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out font-medium xl:text-base lg:text-sm`}
           >
             About
           </Link>
@@ -104,7 +104,7 @@ const Navbar = () => {
           <div className="relative group">
             <div className="flex items-center cursor-pointer">
               <div
-                className={`${isScrolled ? "text-white" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out font-medium flex items-center`}
+                className={`${isScrolled ? "text-white" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out font-medium flex items-center xl:text-base lg:text-sm`}
               >
                 Locations
                 <ChevronDown size={16} className="ml-1" />
@@ -127,34 +127,34 @@ const Navbar = () => {
 
           <Link
             to="/faq"
-            className={`${isScrolled ? "text-white" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out font-medium`}
+            className={`${isScrolled ? "text-white" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out font-medium xl:text-base lg:text-sm`}
           >
             FAQ
           </Link>
           <Link
             to="/contact"
-            className={`${isScrolled ? "text-white" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out font-medium`}
+            className={`${isScrolled ? "text-white" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out font-medium xl:text-base lg:text-sm`}
           >
             Contact
           </Link>
         </div>
 
         {/* Phone Number and CTA */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden lg:flex items-center xl:space-x-4 lg:space-x-2">
           <div className="flex items-center">
             <Phone
               size={18}
               className={`mr-2 ${isScrolled ? "text-white" : "text-primary"} transition-colors duration-300`}
             />
             <span
-              className={`font-medium ${isScrolled ? "text-white" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out`}
+              className={`font-medium ${isScrolled ? "text-white" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out xl:text-base lg:text-sm`}
             >
               980-300-0404
             </span>
           </div>
           <Button
             asChild
-            className="bg-yellow-400 text-black hover:bg-yellow-500 hover:text-black transition-colors duration-300 ease-out"
+            className="bg-yellow-400 text-black hover:bg-yellow-500 hover:text-black transition-colors duration-300 ease-out xl:text-base lg:text-sm xl:px-4 lg:px-3"
           >
             <Link to="/contact">Get Your Free Estimate</Link>
           </Button>
@@ -162,7 +162,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white"
+          className="lg:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -170,7 +170,7 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-primary w-full py-4 px-4 shadow-lg transition-all duration-300">
+        <div className="lg:hidden bg-primary w-full py-4 px-4 shadow-lg transition-all duration-300">
           <div className="flex flex-col space-y-4">
             <Link
               to="/"
