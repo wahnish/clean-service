@@ -142,7 +142,10 @@ const Navbar = () => {
         {/* Phone Number and CTA */}
         <div className="hidden md:flex items-center space-x-4">
           <div className="flex items-center">
-            <Phone size={18} className="mr-2 text-primary" />
+            <Phone
+              size={18}
+              className={`mr-2 ${isScrolled ? "text-white" : "text-primary"} transition-colors duration-300`}
+            />
             <span
               className={`font-medium ${isScrolled ? "text-white" : "text-white"} hover:text-yellow-400 transition-colors duration-300 ease-out`}
             >
@@ -257,7 +260,7 @@ const Navbar = () => {
             </Link>
             <div className="flex items-center pt-2">
               <Phone size={18} className="mr-2 text-white" />
-              <span className="font-medium text-white">555-123-4567</span>
+              <span className="font-medium text-white">980-300-0404</span>
             </div>
             <Button
               className="w-full bg-yellow-400 text-black hover:bg-yellow-500 hover:text-black transition-colors duration-300 ease-out"
