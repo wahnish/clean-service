@@ -274,7 +274,8 @@ const AirbnbCleaning = () => {
                         strokeLinejoin="round"
                         className="text-primary mr-2 mt-1"
                       >
-                        <path d="M20 6 9 17l-5-5" />
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                        <path d="m9 12 2 2 4-4" />
                       </svg>
                       <span>
                         Clean and sanitize all countertops and surfaces
@@ -293,7 +294,8 @@ const AirbnbCleaning = () => {
                         strokeLinejoin="round"
                         className="text-primary mr-2 mt-1"
                       >
-                        <path d="M20 6 9 17l-5-5" />
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                        <path d="m9 12 2 2 4-4" />
                       </svg>
                       <span>Clean inside and outside of microwave</span>
                     </li>
@@ -310,7 +312,8 @@ const AirbnbCleaning = () => {
                         strokeLinejoin="round"
                         className="text-primary mr-2 mt-1"
                       >
-                        <path d="M20 6 9 17l-5-5" />
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                        <path d="m9 12 2 2 4-4" />
                       </svg>
                       <span>
                         Clean stovetop, oven exterior, and refrigerator
@@ -329,7 +332,8 @@ const AirbnbCleaning = () => {
                         strokeLinejoin="round"
                         className="text-primary mr-2 mt-1"
                       >
-                        <path d="M20 6 9 17l-5-5" />
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                        <path d="m9 12 2 2 4-4" />
                       </svg>
                       <span>Empty and clean sink, load and run dishwasher</span>
                     </li>
@@ -377,7 +381,8 @@ const AirbnbCleaning = () => {
                         strokeLinejoin="round"
                         className="text-primary mr-2 mt-1"
                       >
-                        <path d="M20 6 9 17l-5-5" />
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                        <path d="m9 12 2 2 4-4" />
                       </svg>
                       <span>Sanitize toilet, sink, shower, and bathtub</span>
                     </li>
@@ -394,7 +399,8 @@ const AirbnbCleaning = () => {
                         strokeLinejoin="round"
                         className="text-primary mr-2 mt-1"
                       >
-                        <path d="M20 6 9 17l-5-5" />
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                        <path d="m9 12 2 2 4-4" />
                       </svg>
                       <span>Clean mirrors and glass surfaces</span>
                     </li>
@@ -411,7 +417,8 @@ const AirbnbCleaning = () => {
                         strokeLinejoin="round"
                         className="text-primary mr-2 mt-1"
                       >
-                        <path d="M20 6 9 17l-5-5" />
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                        <path d="m9 12 2 2 4-4" />
                       </svg>
                       <span>Replace towels and toiletries</span>
                     </li>
@@ -428,7 +435,8 @@ const AirbnbCleaning = () => {
                         strokeLinejoin="round"
                         className="text-primary mr-2 mt-1"
                       >
-                        <path d="M20 6 9 17l-5-5" />
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                        <path d="m9 12 2 2 4-4" />
                       </svg>
                       <span>Empty trash and clean floors</span>
                     </li>
@@ -475,7 +483,8 @@ const AirbnbCleaning = () => {
                         strokeLinejoin="round"
                         className="text-primary mr-2 mt-1"
                       >
-                        <path d="M20 6 9 17l-5-5" />
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                        <path d="m9 12 2 2 4-4" />
                       </svg>
                       <span>Change all bed linens and make beds</span>
                     </li>
@@ -492,7 +501,8 @@ const AirbnbCleaning = () => {
                         strokeLinejoin="round"
                         className="text-primary mr-2 mt-1"
                       >
-                        <path d="M20 6 9 17l-5-5" />
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                        <path d="m9 12 2 2 4-4" />
                       </svg>
                       <span>Dust all surfaces and furniture</span>
                     </li>
@@ -509,7 +519,8 @@ const AirbnbCleaning = () => {
                         strokeLinejoin="round"
                         className="text-primary mr-2 mt-1"
                       >
-                        <path d="M20 6 9 17l-5-5" />
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                        <path d="m9 12 2 2 4-4" />
                       </svg>
                       <span>Vacuum floors and clean under beds</span>
                     </li>
@@ -526,7 +537,8 @@ const AirbnbCleaning = () => {
                         strokeLinejoin="round"
                         className="text-primary mr-2 mt-1"
                       >
-                        <path d="M20 6 9 17l-5-5" />
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                        <path d="m9 12 2 2 4-4" />
                       </svg>
                       <span>Empty trash and organize room</span>
                     </li>
@@ -574,7 +586,8 @@ const AirbnbCleaning = () => {
                         strokeLinejoin="round"
                         className="text-primary mr-2 mt-1"
                       >
-                        <path d="M20 6 9 17l-5-5" />
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                        <path d="m9 12 2 2 4-4" />
                       </svg>
                       <span>Dust and clean all surfaces</span>
                     </li>
@@ -591,7 +604,8 @@ const AirbnbCleaning = () => {
                         strokeLinejoin="round"
                         className="text-primary mr-2 mt-1"
                       >
-                        <path d="M20 6 9 17l-5-5" />
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                        <path d="m9 12 2 2 4-4" />
                       </svg>
                       <span>Vacuum and mop floors</span>
                     </li>
@@ -608,7 +622,8 @@ const AirbnbCleaning = () => {
                         strokeLinejoin="round"
                         className="text-primary mr-2 mt-1"
                       >
-                        <path d="M20 6 9 17l-5-5" />
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                        <path d="m9 12 2 2 4-4" />
                       </svg>
                       <span>Clean windows and mirrors</span>
                     </li>
@@ -625,7 +640,8 @@ const AirbnbCleaning = () => {
                         strokeLinejoin="round"
                         className="text-primary mr-2 mt-1"
                       >
-                        <path d="M20 6 9 17l-5-5" />
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                        <path d="m9 12 2 2 4-4" />
                       </svg>
                       <span>Arrange furniture and decor</span>
                     </li>
