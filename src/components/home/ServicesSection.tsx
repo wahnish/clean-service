@@ -105,7 +105,7 @@ const ServicesSection = () => {
             Our Cleaning Services
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Whether you’re unwinding after a long day or creating memories with
+            Whether you're unwinding after a long day or creating memories with
             family, we make sure your space feels warm, inviting, and
             effortlessly comfortable.
           </p>

@@ -109,16 +109,13 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* Google Guarantee Badge */}
+            {/* Certification Badge (replaced Google Guarantee Badge) */}
             <div className="mt-8 flex items-center">
               <img
-                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=200&q=80"
-                alt="Google Guaranteed"
-                className="h-16 mr-4 bg-white p-1 rounded"
+                src="/images/tempo-image-20250408T193655093Z.png"
+                alt="Certification Badge"
+                className="h-auto max-h-16 mr-4 rounded-[5px]"
               />
-              <span className="text-sm text-white/90">
-                Professionals that are licensed, pre-screened, and insured.
-              </span>
             </div>
           </div>
           {/* Quote Request Form */}

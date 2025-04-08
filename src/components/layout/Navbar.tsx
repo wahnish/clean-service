@@ -53,13 +53,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold">
           <img
-            src={
-              isScrolled
-                ? "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=200&q=80"
-                : "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=200&q=80"
-            }
+            src="/images/tempo-image-20250408T194420721Z.png"
             alt="Healthy Clean Homes"
-            className="h-10 transition-all duration-300 flex"
+            className="h-10 transition-all duration-300 flex rounded-[5px]"
           />
         </Link>
 
