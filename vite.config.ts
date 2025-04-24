@@ -12,6 +12,10 @@ if (process.env.TEMPO === "true") {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  publicDir: "public",
+  build: {
+    copyPublicDir: true,
+  },
   base:
     process.env.NODE_ENV === "development"
       ? "/"

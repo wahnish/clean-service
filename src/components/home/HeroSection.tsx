@@ -112,7 +112,7 @@ const HeroSection = () => {
             {/* Certification Badge (replaced Google Guarantee Badge) */}
             <div className="mt-8 flex items-center">
               <img
-                src="/images/tempo-image-20250408T193655093Z.png"
+                src="/images/google_guarantee.png"
                 alt="Certification Badge"
                 className="h-auto max-h-16 mr-4 rounded-[5px]"
               />

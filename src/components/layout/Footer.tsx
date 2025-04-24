@@ -19,7 +19,7 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <img
-                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=200&q=80"
+                src="/images/HCH_Logo_white.png"
                 alt="Healthy Clean Homes"
                 className="h-10"
               />
