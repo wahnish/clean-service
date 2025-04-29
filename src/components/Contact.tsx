@@ -1,22 +1,81 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Send, AlertCircle } from "lucide-react";
 import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
-import QuoteRequestForm from "./forms/QuoteRequestForm";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
 import { Checkbox } from "./ui/checkbox";
+import { createClient } from "@supabase/supabase-js";
+import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
+
+// Initialize Supabase client
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 const Contact = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formError, setFormError] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // Form state
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [consent, setConsent] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, you would send the form data to your backend
-    setFormSubmitted(true);
+
+    // Validate consent
+    if (!consent) {
+      setFormError("Please agree to the privacy policy and terms of service");
+      return;
+    }
+
+    setIsSubmitting(true);
+    setFormError(null);
+
+    try {
+      // Insert record into contact_messages table
+      const { data, error } = await supabase.from("contact_messages").insert([
+        {
+          name,
+          email,
+          phone,
+          subject,
+          message,
+          created_at: new Date().toISOString(),
+        },
+      ]);
+
+      if (error) throw error;
+
+      // Reset form state
+      setName("");
+      setEmail("");
+      setPhone("");
+      setSubject("");
+      setMessage("");
+      setConsent(false);
+
+      // Show success message
+      setFormSubmitted(true);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setFormError(
+        error instanceof Error
+          ? error.message
+          : "Failed to submit message. Please try again later."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -69,10 +128,23 @@ const Contact = () => {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
+                  {formError && (
+                    <Alert variant="destructive">
+                      <AlertCircle className="h-4 w-4" />
+                      <AlertTitle>Error</AlertTitle>
+                      <AlertDescription>{formError}</AlertDescription>
+                    </Alert>
+                  )}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Full Name</Label>
-                      <Input id="name" placeholder="John Doe" required />
+                      <Input
+                        id="name"
+                        placeholder="John Doe"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        required
+                      />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="email">Email</Label>
@@ -80,6 +152,8 @@ const Contact = () => {
                         id="email"
                         type="email"
                         placeholder="john@example.com"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         required
                       />
                     </div>
@@ -87,7 +161,12 @@ const Contact = () => {
 
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone Number</Label>
-                    <Input id="phone" placeholder="(555) 123-4567" />
+                    <Input
+                      id="phone"
+                      placeholder="(555) 123-4567"
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                    />
                   </div>
 
                   <div className="space-y-2">
@@ -95,6 +174,8 @@ const Contact = () => {
                     <Input
                       id="subject"
                       placeholder="How can we help you?"
+                      value={subject}
+                      onChange={(e) => setSubject(e.target.value)}
                       required
                     />
                   </div>
@@ -105,12 +186,20 @@ const Contact = () => {
                       id="message"
                       placeholder="Please provide details about your inquiry..."
                       className="min-h-[120px]"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                       required
                     />
                   </div>
 
                   <div className="flex items-start space-x-2">
-                    <Checkbox id="consent" />
+                    <Checkbox
+                      id="consent"
+                      checked={consent}
+                      onCheckedChange={(checked) =>
+                        setConsent(checked === true)
+                      }
+                    />
                     <div className="grid gap-1.5 leading-none">
                       <label
                         htmlFor="consent"
@@ -124,8 +213,12 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <Button type="submit" className="w-full">
-                    Send Message
+                  <Button
+                    type="submit"
+                    className="w-full"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Submitting..." : "Send Message"}
                   </Button>
                 </form>
               )}

@@ -2,8 +2,9 @@ import { useState } from "react";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { CalendarIcon, CheckCircle } from "lucide-react";
+import { CalendarIcon, CheckCircle, AlertCircle } from "lucide-react";
 import { format } from "date-fns";
+import { createClient } from "@supabase/supabase-js";
 
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
@@ -18,7 +19,6 @@ import {
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -26,6 +26,12 @@ import {
 } from "../ui/form";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Calendar } from "../ui/calendar";
+import { Alert, AlertDescription, AlertTitle } from "../ui/alert";
+
+// Initialize Supabase client
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -38,6 +44,8 @@ type FormValues = z.infer<typeof formSchema>;
 
 const QuoteRequestForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [formError, setFormError] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -49,22 +57,36 @@ const QuoteRequestForm = () => {
     },
   });
 
-  function onSubmit(data: FormValues) {
-    console.log(data);
+  async function onSubmit(data: FormValues) {
+    setIsSubmitting(true);
+    setFormError(null);
 
-    // Send email to support@healthycleanhomes.com
-    // In a real application, this would be handled by a backend service
-    // Here we're simulating the email sending process
     try {
-      // This is a mock implementation - in a real app, you would use a backend API
-      // or a service like EmailJS, SendGrid, etc.
-      console.log("Sending email to support@healthycleanhomes.com");
-      console.log("Form data:", JSON.stringify(data, null, 2));
+      // Insert record into quote_requests table
+      const { error } = await supabase.from("quote_requests").insert([
+        {
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          service_type: data.serviceType,
+          created_at: new Date().toISOString(),
+        },
+      ]);
 
-      // Set submitted state to true to show confirmation message
+      if (error) throw error;
+
+      // Show success message
       setIsSubmitted(true);
+      form.reset();
     } catch (error) {
-      console.error("Error sending email:", error);
+      console.error("Error submitting form:", error);
+      setFormError(
+        error instanceof Error
+          ? error.message
+          : "Failed to submit request. Please try again later."
+      );
+    } finally {
+      setIsSubmitting(false);
     }
   }
 
@@ -93,6 +115,13 @@ const QuoteRequestForm = () => {
   return (
     <div className="bg-white p-6 md:p-8 rounded-lg shadow-md border border-border/40">
       <h2 className="text-2xl font-semibold mb-6">Request a Free Quote</h2>
+      {formError && (
+        <Alert variant="destructive" className="mb-6">
+          <AlertCircle className="h-4 w-4" />
+          <AlertTitle>Error</AlertTitle>
+          <AlertDescription>{formError}</AlertDescription>
+        </Alert>
+      )}
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -189,8 +218,9 @@ const QuoteRequestForm = () => {
           <Button
             type="submit"
             className="w-full py-[2.5rem] hover:bg-yellow-400 hover:text-black transition-all duration-200 ease-out"
+            disabled={isSubmitting}
           >
-            Get Your Free Estimate
+            {isSubmitting ? "Submitting..." : "Get Your Free Estimate"}
           </Button>
         </form>
       </Form>
