@@ -119,7 +119,7 @@ const HeroSection = () => {
             </div>
           </div>
           {/* Quote Request Form */}
-          <div className="hidden lg:block">
+          <div>
             <QuoteRequestForm />
           </div>
         </div>

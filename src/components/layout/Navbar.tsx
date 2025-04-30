@@ -57,7 +57,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold">
           <img
-            src="/images/HCH-Logo_white.png"
+            src="/images/HCH_Logo_white.png"
             alt="Healthy Clean Homes"
             className="h-10 transition-all duration-300 flex rounded-[5px]"
           />

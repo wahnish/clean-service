@@ -57,7 +57,7 @@ const QuoteRequestForm = () => {
     },
   });
 
-  async function onSubmit(data: FormValues) {
+  const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true);
     setFormError(null);
 
@@ -88,7 +88,7 @@ const QuoteRequestForm = () => {
     } finally {
       setIsSubmitting(false);
     }
-  }
+  };
 
   if (isSubmitted) {
     return (
@@ -113,7 +113,7 @@ const QuoteRequestForm = () => {
   }
 
   return (
-    <div className="bg-white p-6 md:p-8 rounded-lg shadow-md border border-border/40">
+    <div className="bg-white p-6 md:p-8 rounded-lg shadow-md border border-border/40 w-full">
       <h2 className="text-2xl font-semibold mb-6">Request a Free Quote</h2>
       {formError && (
         <Alert variant="destructive" className="mb-6">

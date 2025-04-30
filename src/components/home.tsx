@@ -3,7 +3,6 @@ import HeroSection from "./home/HeroSection";
 import ServicesSection from "./home/ServicesSection";
 import TestimonialsSection from "./home/TestimonialsSection";
 import QuoteRequestForm from "./forms/QuoteRequestForm";
-import React from "react";
 import Footer from "./layout/Footer";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";

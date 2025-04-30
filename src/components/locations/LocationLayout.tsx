@@ -26,27 +26,6 @@ const LocationLayout: React.FC<LocationLayoutProps> = ({
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
-                backgroundImage: `url('https://images.unsplash.com/photo-${
-                  title.includes("Waxhaw")
-                    ? "1627483297929-0fbcf4d25454"
-                    : title.includes("Wesley Chapel")
-                      ? "1627483297929-0fbcf4d25454"
-                      : title.includes("Weddington")
-                        ? "1627483297929-0fbcf4d25454"
-                        : title.includes("Marvin")
-                          ? "1627483297929-0fbcf4d25454"
-                          : title.includes("Ballantyne")
-                            ? "1627483297929-0fbcf4d25454"
-                            : title.includes("Monroe")
-                              ? "1627483297929-0fbcf4d25454"
-                              : title.includes("White Oaks")
-                                ? "1627483297929-0fbcf4d25454"
-                                : title.includes("Indian Trail")
-                                  ? "1627483297929-0fbcf4d25454"
-                                  : title.includes("Stallings")
-                                    ? "1627483297929-0fbcf4d25454"
-                                    : "1627483297929-0fbcf4d25454"
-                }?w=1200&q=80')`,
                 filter: "brightness(0.85)",
               }}
             />
@@ -80,7 +59,9 @@ const LocationLayout: React.FC<LocationLayoutProps> = ({
               <div className="rounded-lg overflow-hidden shadow-xl">
                 <img
                   src={imageUrl}
-                  alt={`Cleaning services in ${title.split("In ")[1].split(", NC")[0]}`}
+                  alt={`Cleaning services in ${
+                    title.split("In ")[1].split(", NC")[0]
+                  }`}
                   className="w-full h-auto"
                 />
               </div>
