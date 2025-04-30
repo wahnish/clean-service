@@ -81,7 +81,7 @@ const LocationLayout: React.FC<LocationLayoutProps> = ({
                   title: "Standard Cleaning",
                   description:
                     "Regular maintenance cleaning to keep your home fresh and tidy.",
-                  image: "/images/tempo-image-20250401T154534507Z.png",
+                  image: "/images/Services.jpg",
                 },
                 {
                   title: "Deep Cleaning",

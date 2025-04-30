@@ -8,7 +8,7 @@ const testimonials = [
     location: "Waxhaw, NC",
     rating: 5,
     text: "I've been using Healthy Clean Homes, and I couldn't be happier with their service. My home always looks and smells amazing after they're done!",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah",
+    image: "/images/client-1.jpg",
   },
   {
     id: 2,
@@ -16,15 +16,15 @@ const testimonials = [
     location: "Wesley Chapel, NC",
     rating: 5,
     text: "The attention to detail is incredible. They clean areas I wouldn't even think of, and they're always on time and professional.",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Michael",
+    image: "/images/client-2.jpg",
   },
   {
     id: 3,
-    name: "Emily C.",
+    name: "Mark C.",
     location: "Weddington, NC",
     rating: 5,
     text: "I'm a single parent, so having Healthy Clean Homes take care of my home has been a game-changer. Worth every penny!",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Emily",
+    image: "/images/client-3.jpg",
   },
 ];
 
